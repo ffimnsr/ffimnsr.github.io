@@ -15,4 +15,4 @@ jobs:
           # Target branch
           PAGES_BRANCH: master
           # Provide personal access token
-          GITHUB_TOKEN: ${{ secrets.PUBLIC_TOKEN }}
+          TOKEN: ${{ secrets.PUBLIC_TOKEN }}
