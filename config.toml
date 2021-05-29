@@ -2,8 +2,8 @@ base_url = "https://portfolio.vastorigins.com"
 compile_sass = true
 build_search_index = false
 theme = "oceanic-zen"
-title = "Portfolio - Edward"
-description = "Goodies and perks."
+title = "Si Vis Pacem, Para Bellum"
+description = "Contains my playground and serves as work portfolio"
 taxonomies = [
     { name = "categories", feed = true },
     { name = "tags", feed = true },
