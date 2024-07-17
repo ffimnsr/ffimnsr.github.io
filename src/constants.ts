@@ -86,7 +86,7 @@ export const PROFILE_LINKS: Link[] = [
   },
   {
     title: "Portfolio",
-    href: "https://me.vastorigins.com/portfolio",
+    href: "/portfolio",
     icon: FaBriefcase,
   },
   {

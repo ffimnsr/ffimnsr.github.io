@@ -3,7 +3,7 @@ import { HeadFC, PageProps } from "gatsby"
 import { Flex, Heading, Stack, VStack } from "@chakra-ui/react"
 import { THEME } from "../constants"
 
-const NotFoundPage: React.FC<PageProps> = () => {
+const PortfolioPage: React.FC<PageProps> = () => {
   return (
     <main>
       <Flex backgroundColor={THEME.pageBgColor} justify="center" minHeight="100vh" px={5} py={8}>
@@ -32,6 +32,6 @@ const NotFoundPage: React.FC<PageProps> = () => {
   )
 }
 
-export default NotFoundPage
+export default PortfolioPage
 
-export const Head: HeadFC = () => <title>Not found</title>
+export const Head: HeadFC = () => <title>Portfolio</title>
