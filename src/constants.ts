@@ -1,4 +1,4 @@
-import { FaCertificate, FaDiscord, FaGithub, FaGitlab, FaGlobeAsia, FaGoogle, FaGooglePlay, FaGooglePlus, FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa"
+import { FaCertificate, FaDiscord, FaEnvelope, FaGithub, FaGitlab, FaGlobe, FaGoogle, FaGooglePlay, FaHackerrank, FaLinkedin, FaStackOverflow, FaTelegram, FaThreads, FaTwitter } from "react-icons/fa6"
 
 export type Link = {
   title: string
@@ -11,6 +11,7 @@ type User = {
   description: string
   contact: string
   avatarUrl: string
+  email: string
 }
 
 export const THEME = {
@@ -25,6 +26,7 @@ export const USER_DATA: User = {
   description: "How long is forever?",
   contact: "@ffimnsr",
   avatarUrl: "https://avatars.githubusercontent.com/u/29743013?v=4",
+  email: "eabucay-jobs.bbva3@silomails.com",
 }
 
 export const CONTACT_LINKS: Link[] = [
@@ -48,13 +50,23 @@ export const CONTACT_LINKS: Link[] = [
     href: "https://x.com/ffimnsr",
     icon: FaTwitter,
   },
+  {
+    title: "Threads",
+    href: "https://threads.net/@ffimnsr",
+    icon: FaThreads,
+  },
+  {
+    title: "Email",
+    href: `mailto:${USER_DATA.email}`,
+    icon: FaEnvelope,
+  },
 ]
 
 export const PROFILE_LINKS: Link[] = [
   {
     title: "My Wonderful Blog",
     href: "https://vastorigins.com",
-    icon: FaGlobeAsia
+    icon: FaGlobe
   },
   {
     title: "Github",
@@ -80,5 +92,15 @@ export const PROFILE_LINKS: Link[] = [
     title: "Credly (Certificates)",
     href: "https://www.credly.com/users/ffimnsr",
     icon: FaCertificate,
+  },
+  {
+    title: "HackerRank",
+    href: "https://www.hackerrank.com/profile/ffimnsr",
+    icon: FaHackerrank,
+  },
+  {
+    title: "StackOverflow",
+    href: "https://stackoverflow.com/users/1406063/edward-fitz-abucay",
+    icon: FaStackOverflow,
   },
 ]
