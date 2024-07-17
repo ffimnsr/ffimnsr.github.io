@@ -1,4 +1,20 @@
-import { FaCertificate, FaDiscord, FaEnvelope, FaGithub, FaGitlab, FaGlobe, FaGoogle, FaGooglePlay, FaHackerrank, FaLinkedin, FaStackOverflow, FaTelegram, FaThreads, FaTwitter } from "react-icons/fa6"
+import {
+  FaBriefcase,
+  FaCertificate,
+  FaDiscord,
+  FaEnvelope,
+  FaGithub,
+  FaGitlab,
+  FaGlobe,
+  FaGoogle,
+  FaGooglePlay,
+  FaHackerrank,
+  FaLinkedin,
+  FaStackOverflow,
+  FaTelegram,
+  FaThreads,
+  FaTwitter
+} from "react-icons/fa6"
 
 export type Link = {
   title: string
@@ -69,6 +85,11 @@ export const PROFILE_LINKS: Link[] = [
     icon: FaGlobe
   },
   {
+    title: "Portfolio",
+    href: "https://me.vastorigins.com/portfolio",
+    icon: FaBriefcase,
+  },
+  {
     title: "Github",
     href: "https://github.com/ffimnsr",
     icon: FaGithub,
@@ -85,7 +106,7 @@ export const PROFILE_LINKS: Link[] = [
   },
   {
     title: "Google Cloud Skill",
-    href: "hhttps://www.cloudskillsboost.google/public_profiles/a7529475-c92d-4186-9934-bb8b6276540d",
+    href: "https://www.cloudskillsboost.google/public_profiles/a7529475-c92d-4186-9934-bb8b6276540d",
     icon: FaGooglePlay,
   },
   {

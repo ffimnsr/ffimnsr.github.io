@@ -50,7 +50,7 @@ const Header: React.FC = () => {
   }, [])
   return (
     <VStack>
-      <Image src={user ? user.avatar_url : USER_DATA.avatarUrl} width={180} height={180} mb={3} rounded={"full"} />
+      <Image src={user ? user.avatar_url : USER_DATA.avatarUrl} boxSize={180} mb={3} borderRadius={"full"} borderWidth={"medium"} borderColor={"white"} fallbackSrc={USER_DATA.avatarUrl} />
       <Heading size="lg" mb={2}>
         {USER_DATA.name}
       </Heading>
