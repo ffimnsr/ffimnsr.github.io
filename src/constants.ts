@@ -22,7 +22,7 @@ export type Link = {
   icon: React.ComponentType
 }
 
-type User = {
+export type User = {
   name: string
   description: string
   contact: string
@@ -30,11 +30,20 @@ type User = {
   email: string
 }
 
+export type PortfolioItem = {
+  name: string
+  taskOverview: string
+  description: string
+  imageUrl: string
+  url: string
+}
+
 export const THEME = {
   linkHover: "gray.600",
   profileLinkBgColor: "gray.700",
   pageBgColor: "gray.900",
   subHeadingTextColor: "gray.400",
+  portfolioSectionTitleColor: "gray.400",
 }
 
 export const USER_DATA: User = {
@@ -85,6 +94,11 @@ export const PROFILE_LINKS: Link[] = [
     icon: FaGlobe
   },
   {
+    title: "Credly (Certificates)",
+    href: "https://www.credly.com/users/ffimnsr",
+    icon: FaCertificate,
+  },
+  {
     title: "Portfolio",
     href: "/portfolio",
     icon: FaBriefcase,
@@ -110,11 +124,6 @@ export const PROFILE_LINKS: Link[] = [
     icon: FaGooglePlay,
   },
   {
-    title: "Credly (Certificates)",
-    href: "https://www.credly.com/users/ffimnsr",
-    icon: FaCertificate,
-  },
-  {
     title: "HackerRank",
     href: "https://www.hackerrank.com/profile/ffimnsr",
     icon: FaHackerrank,
@@ -123,5 +132,141 @@ export const PROFILE_LINKS: Link[] = [
     title: "StackOverflow",
     href: "https://stackoverflow.com/users/1406063/edward-fitz-abucay",
     icon: FaStackOverflow,
+  },
+]
+
+export const COMPANIES: PortfolioItem[] = [
+  {
+    name: "NFTPort",
+    taskOverview: "Build Solana Indexer & Integrate Solana Ecosystem",
+    description: "Lead and implemented a full pledged Solana indexer to capture block events.",
+    imageUrl: "https://placehold.co/400",
+    url: "https://www.nftport.xyz/",
+  },
+  {
+    name: "Onebright UK",
+    taskOverview: "Build Online Mental Health Triage Platform",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://onebright.com/",
+  },
+  {
+    name: "Hyst US",
+    taskOverview: "Build Rewards System That Use Blockchain",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://hyst.co/",
+  },
+  {
+    name: "Becton Dickinson",
+    taskOverview: "Build Internal Inventory Platform That Uses Active Directory",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://bd.com/",
+  },
+  {
+    name: "ACEP",
+    taskOverview: "Implement SSO On Existing Platform",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://acep.org/",
+  },
+  {
+    name: "Queenside Games (Chess Playground)",
+    taskOverview: "Maintain & Develop Erlang/Elixir Game Backend",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://play.google.com/store/apps/details?id=com.queenloop.choker&hl=en_US",
+  },
+  {
+    name: "HyperCapital",
+    taskOverview: "",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://hypercapital.com/",
+  },
+  {
+    name: "Nitro Token",
+    taskOverview: "",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://nitro.live/",
+  },
+  {
+    name: "SmartFunding Singapore",
+    taskOverview: "",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://smartfunding.sg/",
+  },
+  {
+    name: "Fatberry",
+    taskOverview: "",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://fatberry.com/",
+  },
+  {
+    name: "BeamSpace",
+    taskOverview: "",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://www.beamspace.com/",
+  },
+  {
+    name: "Eureka Pro Singapore",
+    taskOverview: "",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "",
+  },
+  {
+    name: "Talkpush",
+    taskOverview: "Develop New NLP Chatbot & Implement User Search",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://talkpush.com/",
+  },
+  {
+    name: "Truuue Singapore",
+    taskOverview: "Build Marketplace/Auction Place For Realstate On IOS",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://truuue.com/",
+  },
+  {
+    name: "Matchimi PH",
+    taskOverview: "",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://matchimi.ph/",
+  },
+  {
+    name: "ToucanPay",
+    taskOverview: "ML Researcher On Credit Behavioural Score",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "",
+  },
+  {
+    name: "Blueprint Gaming",
+    taskOverview: "Build EGM Games & Develop Hardware Drivers",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "https://blueprintgaming.com/",
+  },
+  {
+    name: "PJ Holdings",
+    taskOverview: "Quality Test EGM Games & Adapt New Automated Testing",
+    description: "",
+    imageUrl: "https://placehold.co/400",
+    url: "",
+  },
+  {
+    name: "Aruze Gaming",
+    taskOverview: "Build EGM Games & Maintained Theoritcal RTP Score",
+    description: "Maintained the TRTP (theoretical return to player) percentage of casino slot machine games.",
+    imageUrl: "https://placehold.co/400",
+    url: "https://aruzeglobal.com/",
   },
 ]

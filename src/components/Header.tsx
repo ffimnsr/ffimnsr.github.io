@@ -1,6 +1,6 @@
 
 import React from "react"
-import { VStack, Image, Heading, Box } from "@chakra-ui/react"
+import { VStack, Image, Heading } from "@chakra-ui/react"
 
 import { THEME, USER_DATA } from "../constants"
 import axios from "axios"
