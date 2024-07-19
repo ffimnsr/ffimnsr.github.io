@@ -8,7 +8,6 @@ import {
   Text,
   Image,
   VStack,
-  Link,
   Button,
 } from "@chakra-ui/react";
 import React from "react"
@@ -35,8 +34,11 @@ const CompanyCard: React.FC<PortfolioItem> = ({ name, taskOverview, description,
 const CompaniesGrid: React.FC = () => {
   return (
     <Box w="100%">
-      <Heading as="h2" color={THEME.portfolioSectionTitleColor} mb={8}>
+      <Heading as="h2" color={THEME.portfolioSectionTitleColor}>
         Companies
+      </Heading>
+      <Heading as="h3" size="sm" fontWeight="normal" color={THEME.portfolioSectionSubTitleColor} mb={8}>
+        List of companies that I've worked with.
       </Heading>
       <SimpleGrid spacing={2} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
         {COMPANIES.map((t, i) => (
