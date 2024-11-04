@@ -1,9 +1,5 @@
-name: Gatsby Publish
-
-on:
-  push:
-    branches:
-      - master
+name: build-deploy-pages
+on: workflow_dispatch
 
 permissions:
   contents: read
