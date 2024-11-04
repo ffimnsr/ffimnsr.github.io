@@ -25,7 +25,7 @@ const CompanyCard: React.FC<PortfolioItem> = ({ name, taskOverview, description,
         </VStack>
       </CardBody>
       <CardFooter>
-        <Button as="a" href={url}>View here</Button>
+        <Button as="a" href={url}>Company Website</Button>
       </CardFooter>
     </Card>
   );
@@ -38,7 +38,7 @@ const CompaniesGrid: React.FC = () => {
         Companies
       </Heading>
       <Heading as="h3" size="sm" fontWeight="normal" color={THEME.portfolioSectionSubTitleColor} mb={8}>
-        List of companies that I've worked with.
+        List of companies that I've collaborated with.
       </Heading>
       <SimpleGrid spacing={2} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
         {COMPANIES.map((t, i) => (
